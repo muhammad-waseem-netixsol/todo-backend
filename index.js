@@ -10,9 +10,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/todo", todo);
-const port = 4000;
 
-const DATABASE_URL = process.env.DATABASE_URL;
 
 
 app.get("/", (req, res) => {
