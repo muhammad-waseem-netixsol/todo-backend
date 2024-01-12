@@ -19,9 +19,9 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.listen(4000, () => {
+app.listen(3000, () => {
    connectDB().then(con => {
-    console.log(`Example app listening on port 4000`);
+    console.log(`Example app listening on port 3000`);
    }).catch(err => {
     console.log(err)
    }) ;
