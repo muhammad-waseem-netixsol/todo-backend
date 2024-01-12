@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
 });
 
 app.listen(port, () => {
-   connectDB().then(con => {
+   connectDB("mongodb://gorayausman061:Z0GiGTFr4JIPiUvl@ac-3i0kfuy-shard-00-00.vdk3ku9.mongodb.net:27017,ac-3i0kfuy-shard-00-01.vdk3ku9.mongodb.net:27017,ac-3i0kfuy-shard-00-02.vdk3ku9.mongodb.net:27017/CMS?ssl=true&replicaSet=atlas-qooh9o-shard-0&authSource=admin&retryWrites=true&w=majority").then(con => {
     console.log(`Example app listening on port ${port}`);
    }).catch(err => {
     console.log(err)
