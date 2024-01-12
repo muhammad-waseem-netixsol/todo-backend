@@ -28,7 +28,7 @@ const createTodo = async (req, res) => {
 const getAllTodo = async (req, res) => {
   try {
     const states = await Todo.find();
-    res.send({
+    return res.send({
       Todo: states,
       message: "Todo Fetch Successfully",
     });
